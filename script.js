@@ -375,6 +375,23 @@ buttons.forEach(button => {
     })
 });
 
+div3_button1 = document.getElementById('div3-button-1')
+div3_button2 = document.getElementById('div3-button-2')
+div3_button3 = document.getElementById('div3-button-3')
+div3_button4 = document.getElementById('div3-button-4')
+div3_buttons = document.querySelectorAll('.div3-selection-buttons')
+
+function div3Buttons() {
+    div3_buttons.forEach(item => {
+        item.style.borderBottom = 'none'
+    })
+}
+// div3 buttons
+function div3Button1() {div3_button1.style.borderBottom = "1px solid rgb(45, 45, 45)"}
+function div3Button2() {div3_button2.style.borderBottom = "1px solid rgb(45, 45, 45)"}
+function div3Button3() {div3_button3.style.borderBottom = "1px solid rgb(45, 45, 45)"}
+function div3Button4() {div3_button4.style.borderBottom = "1px solid rgb(45, 45, 45)"}
+
 
 // message board
 const messageButtonInterior = document.getElementById('message-button-gone');
