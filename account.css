@@ -1,0 +1,82 @@
+.account-div1 img {
+    width: 100%;
+}
+
+.account-hr1 {
+    margin-top: -4px;
+    background-color: rgb(45,45,45, 0.3)
+}
+
+.account-login p {
+    color: rgb(45,45,45);
+    font-weight: 600;
+    margin-left: 4%;
+    margin-top: 24px;
+    font-size: 1.15rem;
+    transform: scale(1, 1.3);
+    padding-bottom: 12px;
+}
+
+.account-hr2 {
+    background-color: rgb(45,45,45, 0.3);
+    width: 92%;
+    margin: 0 4%;
+}
+
+.account-div3 {
+    margin: 10px 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 35px;
+}
+
+.account-div3 > * > *{
+    margin-top: 14px;
+    margin-right: 19px;
+}
+.account-registered-customers {
+    display: block;
+}
+
+.account-registered-customers input {
+    height: 30px;
+    width: 90%;
+    margin-top: 10px;
+    display: block;
+}
+
+.account-registered-customers input::placeholder,
+.account-registered-customers input[type="text"] {
+    font-size: 1rem;
+    color: rgb(45,45,45);
+}
+
+.account-registered-customers input[type="text"] {
+    padding-left: 5px;
+}
+
+.account-button {
+    height: 40px;
+    width: 215px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(45, 45, 45, 0.9);
+}
+
+.account-button1 {
+    margin-top: 18px;
+}
+
+.account-p1 {
+    font-weight: 600;
+    transform: scale(1, 1.1)
+}
+
+.account-a {
+    color: rgb(45,45,45);
+    margin-top: 15px;
+}
+
+.account-a:hover {
+    opacity: 0.6;
+} 
