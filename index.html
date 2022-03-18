@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush Culture</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+    <!-- <script src="https://kit.fontawesome.com/b652bf2780.js" crossorigin="anonymous"></script> -->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+</head>
+
+<body id="body">
+    <div id="container" class="container">
+        
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <p>Complimentary Shipping $50+ and Free Returns</p>
+        </div>
+        
+        <!-- Navigation -->
+        <div id="nav" class="nav">
+            <div id="nav-left" class="nav-left">
+                <button id="three-lines-icon" class="three-lines-icon" onclick="openSideBar()">
+                    <div class="three-lines-icon-1"></div>  
+                    <div class="three-lines-icon-2"></div> 
+                    <div class="three-lines-icon-3"></div> 
+                </button>  
+            </div>
+
+            <div id="nav-logo" class="nav-logo nav-logo-before">
+                <a href="index.html"><img src="images/rush-culture-flex.png" alt=""></a>
+            </div>
+
+            <div id="nav-left-replace" class="nav-left-replace">
+                <div id="nav-left-replace-p">
+                    <a href="index.html" class="nav-center-a dropdown1" id="nav-center-a1"><p id="nav-center-p1" class="nav-center-p">MENS</p></a>
+                    <a href="index.html" class="nav-center-a dropdown2" id="nav-center-a2"><p id="nav-center-p2" class="nav-center-p">WOMENS</p></a>
+                    <a href="index.html" class="nav-center-a dropdown3" id="nav-center-a3"><p id="nav-center-p3" class="nav-center-p">KIDS</p></a>
+                    <a href="index.html" class="nav-center-a dropdown4" id="nav-center-a4"><p id="nav-center-p4" class="nav-center-p">COLLEGIATE</p></a>
+                    <a href="index.html" class="nav-center-a dropdown5" id="nav-center-a5"><p id="nav-center-p5" class="nav-center-p">ACCESSORIES</p></a>
+                    <a href="index.html" class="nav-center-a dropdown6" id="nav-center-a6"><p id="nav-center-p6" class="nav-center-p">HOME</p></a>
+                </div>
+                
+                <div id="nav-left-replace-line"></div>
+
+                <input type="text" id="nav-left-replace-input" placeholder="What are you looking for?" oninput="navLeftReplaceInputSwitchIcon()">
+            </div>
+        
+            <div id="nav-right" class="nav-right">
+                <button id="search-icon" class="search-icon" onclick="determineSearchPath()">
+                    <div id="search-mag">
+                        <div class="search-line"></div>
+                        <div class="search-circle"></div>
+                    </div>
+                    
+                    <div id="search-x">
+                        <div class="search-x-line1"></div>
+                        <div class="search-x-line2"></div>
+                    </div>
+                </button>
+                
+                <a id="account-icon" class="account-icon" href="index.html">
+                    <div class="account-icons">
+                        <div class="account-circle"></div>
+                        <div class="account-circle2"></div>
+                    </div>
+                </a>
+
+                <a href="bag.html">
+                    <div class="bag-icon">
+                        <div class="bag-circle"></div>
+                        <div class="bag-box">
+                            <p>0</p>
+                        </div>
+                        <div class="handles handle1"></div>
+                        <div class="handles handle2"></div>
+                    </div>
+                </a>  
+            </div>
+
+        </div>
+
+        <!-- Dropdown  -->
+        <div id="dropdown" class="dropdown">
+            <div id="dropdown-item1" class="dropdown-items dropdown1">
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Featured</a>
+                    <a href="products.html">New Arrivals</a>
+                    <a href="products.html">Best Sellers</a>
+                    <hr class="dropdown-hr">
+                    <a href="products.html" class="dropdown-a-titles">Collections</a>
+                    <a href="products.html">Active Shop</a>
+                    <a href="products.html">Streetwear</a>
+                    <a href="products.html">Sports</a>
+                    <a href="products.html">Performance</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Tops</a>
+                    <a href="products.html">Polo Shirts</a>
+                    <a href="products.html">Sport Shirts</a>
+                    <a href="products.html">Button Down Shirts</a>
+                    <a href="products.html">Short Sleeve Button Down Shirts</a>
+                    <a href="products.html">T-shirts</a>
+                    <a href="products.html">Pullovers & Hoodies</a>
+                    <a href="products.html">Jackets & Vests</a>
+                    <a href="products.html">Blazers</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Bottoms</a>
+                    <a href="products.html">Shorts</a>
+                    <a href="products.html">Pants</a>
+                    <a href="products.html">Swim</a>
+                    <hr class="dropdown-hr">
+                    <a href="products.html" class="dropdown-a-titles">Shoes</a>
+                    <a href="products.html">Flip flops</a>
+                    <a href="products.html">Tennis Shoes</a>
+                    <a href="products.html">Water Shoes</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Accessories</a>
+                    <a href="products.html">Hats & Visors</a>
+                    <a href="products.html">Boxers</a>
+                    <a href="products.html">Belts</a>
+                    <a href="products.html">Fragrance</a>
+                    <a href="products.html">Ties & Pocket Squares</a>
+                    <hr class="dropdown-hr">
+                    <a href="products.html" class="dropdown-a-titles">Collaborations</a>
+                    <a href="products.html">Summer Fly</a>
+                    <a href="products.html">Crystal</a>
+                    <a href="products.html">Leos</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Sale</a>
+                    <a href="products.html">Summer Discounts</a>
+                </div>
+                
+            </div>
+
+            <div id="dropdown-item2" class="dropdown-items dropdown2">
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Featured</a>
+                    <a href="products.html">New Arrivals</a>
+                    <a href="products.html">Best Sellers</a>
+                    <hr class="dropdown-hr">
+                    <a href="products.html" class="dropdown-a-titles">Collections</a>
+                    <a href="products.html">Active Shop</a>
+                    <a href="products.html">Streetwear</a>
+                    <a href="products.html">Sports</a>
+                    <a href="products.html">Performance</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Dresses</a>
+                    <a href="products.html">All Dresses</a>
+                    <a href="products.html">Active Dresses</a>
+                    <hr class="dropdown-hr">
+                    <a href="products.html" class="dropdown-a-titles">Tops</a>
+                    <a href="products.html">All Tops</a>
+                    <a href="products.html">Graphic T-shirts</a>
+                    <a href="products.html">Button Downs & Popovers</a>
+                    <a href="products.html">Pullovers & Hoodies</a>
+                    <a href="products.html">Jackets & Vests</a>
+
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Bottoms</a>
+                    <a href="products.html">All Bottoms</a>
+                    <a href="products.html">Shorts</a>
+                    <a href="products.html">Skirts</a>
+                    <a href="products.html">Jeans and Leggings</a>
+                    <hr class="dropdown-hr">
+                    <a href="products.html" class="dropdown-a-titles">Swim & Cover-ups</a>
+                    <a href="products.html">Swim Suits</a>
+                    <a href="products.html">Bikinis</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Lounge</a>
+                    <a href="products.html">Pajamas & Loungewear</a>
+                    <hr class="dropdown-hr">
+                    <a href="products.html" class="dropdown-a-titles">Shoes</a>
+                    <a href="products.html">Sandals</a>
+                    <a href="products.html">Flip Flops</a>
+                    <a href="products.html">Tennis Shoes</a>
+                    <hr class="dropdown-hr">
+                    <a href="products.html" class="dropdown-a-titles">Accessories</a>
+                    <a href="products.html">Hats & Bags</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Sale</a>
+                    <a href="products.html">Summer Discounts</a>
+                </div>
+            </div>
+
+            <div id="dropdown-item3" class="dropdown-items dropdown3">
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Featured</a>
+                    <a href="products.html">New Arrivals</a>
+                    <a href="products.html">Best Sellers</a>
+                    <hr class="dropdown-hr">
+                    <a href="products.html" class="dropdown-a-titles">Collections</a>
+                    <a href="products.html">Active Shop</a>
+                    <a href="products.html">Streetwear</a>
+                    <a href="products.html">Sports</a>
+                    <a href="products.html">Performance</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Tops</a>
+                    <a href="products.html">Kids T-shirts</a>
+                    <a href="products.html">Boys Polo Shirts</a>
+                    <a href="products.html">Boys Button Down Shirts</a>
+                    <hr class="dropdown-hr">
+                    <a href="products.html" class="dropdown-a-titles">Bottoms</a>
+                    <a href="products.html">Boys Shorts</a>
+                    <a href="products.html">Boys Swim Trunks</a>
+                    <a href="products.html">Boys Pants</a>
+              
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Accessories</a>
+                    <a href="products.html">Kids Hats</a>
+                    <a href="products.html">Kids Belts</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Sale</a>
+                    <a href="products.html">Summer Discounts</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    
+                </div>
+            </div>
+
+            <div id="dropdown-item4" class="dropdown-items dropdown4">
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Performance</a>
+                    <a href="products.html">Soccer</a>
+                    <a href="products.html">Hockey</a>
+                    <a href="products.html">Football</a>
+                    <a href="products.html">Baseball</a>
+                    <a href="products.html">Basketball</a>
+                    <a href="products.html">Tennis</a>
+                    <a href="products.html">Swimming</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Ivy</a>
+                    <a href="products.html">Harvard</a>
+                    <a href="products.html">Yale</a>
+                    <a href="products.html">Dartmouth</a>
+                    <a href="products.html">Penn</a>
+                    <a href="products.html">Brown</a>
+                    <a href="products.html">Princeton</a>
+                    <a href="products.html">Cornell</a>
+                    <a href="products.html">Columbia</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Acc</a>
+                    <a href="products.html">Clemnson</a>
+                    <a href="products.html">Florida State</a>
+                    <a href="products.html">Miami</a>
+                    <a href="products.html">NC State</a>
+                    <a href="products.html">North Carolina</a>
+                    <a href="products.html">Virginia Tech</a>
+                    <a href="products.html">Virginia</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Independant</a>
+                    <a href="products.html">Notre Dame</a>
+                </div>
+            </div>
+
+            <div id="dropdown-item5" class="dropdown-items dropdown5">
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Clothing</a>
+                    <a href="products.html">Belts</a>
+                    <a href="products.html">Boxers</a>
+                    <a href="products.html">Hats & Visors</a> 
+                    <a href="products.html">Ties & Pocket Squares</a>
+                    <a href="products.html">Sunglasses</a>                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Everyday</a>
+                    <a href="products.html">Bags</a>
+                    <a href="products.html">Beach Towels</a>
+                    <a href="products.html">Dog Accessories</a>
+                    <a href="products.html">Mugs</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Gifts</a>
+                    <a href="products.html">E-Gift Card</a>
+                    <a href="products.html">Fragrance</a>
+                    <a href="products.html">Gift Box</a>
+                </div>
+            </div>
+
+            <div id="dropdown-item6" class="dropdown-items dropdown6">
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Bedding</a>
+                    <a href="products.html">Sheet Sets</a>
+                    <a href="products.html">Comforters</a>
+                    <a href="products.html">Quilts</a>
+                    <a href="products.html">Decorative Pillows</a> 
+                    <a href="products.html">Shams</a> 
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="products.html" class="dropdown-a-titles">Bath</a>
+                    <a href="products.html">Towels</a>
+                    <a href="products.html">Bath Mats</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Side Bar -->
+        <div id="sidebar" class="sidebar">
+            <div class="nav-right-S">
+                <button class="search-icon-S" onclick="determineSearchPath_S()">
+                    <div id="search-mag-S">
+                        <div class="search-line"></div>
+                        <div class="search-circle"></div>
+                    </div>   
+                    
+                    <div id="search-x-S">
+                        <div class="search-x-line1-S"></div>
+                        <div class="search-x-line2-S"></div>
+                    </div>
+                </button>
+                
+                <a class="account-icon" href="index.html">
+                    <div class="account-icons-S">
+                        <div class="account-circle"></div>
+                        <div class="account-circle2"></div>
+                    </div>
+                </a>
+
+                <a href="bag.html">
+                    <div class="bag-icon-S">
+                        <div class="bag-circle"></div>
+                        <div class="bag-box">
+                            <p>0</p>
+                        </div>
+                        <div class="handles handle1"></div>
+                        <div class="handles handle2"></div>
+                    </div>
+                </a>  
+            </div>
+
+            <hr id="sidebar-search-hr">
+
+            <input type="text" id="sidebar-search-input" placeholder="What are you looking for?" oninput="navLeftReplaceInputSwitchIcon_S()">
+            
+
+
+            <button id="close-btn" class="closebtn" onclick="closeSideBar()">&times;</button>
+
+            <div id="sidebar-items" class="sidebar-items">
+                <a href="products.html"><p class="sidebar-item" data-sidebar-i>MENS</p></a>
+                <hr class="sidebar-hr">
+                <a href="products.html"><p class="sidebar-item" data-sidebar-i>WOMENS</p></a>
+                <hr class="sidebar-hr">
+                <a href="products.html"><p class="sidebar-item" data-sidebar-i>KIDS</p></a>
+                <hr class="sidebar-hr">
+                <a href="products.html"><p class="sidebar-item" data-sidebar-i>COLLEGIATE</p></a>
+                <hr class="sidebar-hr">
+                <a href="products.html"><p class="sidebar-item" data-sidebar-i>ACCESSORIES</p></a>
+                <hr class="sidebar-hr">
+                <a href="products.html"><p class="sidebar-item" data-sidebar-i>HOME</p></a>
+            </div>
+        </div>
+
+        <!-- Home Page -->
+        <div id="homepage" class="homepage">
+            <section aria-label="Newest Photos">
+                <div id="carousel" class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev"><p>></p></button>
+                    <button class="carousel-button next" data-carousel-button="next"><p>></p></button>
+                    
+                    <ul id="ul-carousel" data-slides>
+                        <li class="carousel-slide" data-active>
+                            <img src="images/image3.jpg" alt="">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/image4.jpg" alt="">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/image1.jpg" alt="">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/image5.jpg" alt="">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/image2.jpg" alt="">
+                        </li>
+                    </ul>
+                    
+                </div>  
+            </section>
+        
+            <!-- First Div -->
+            <div class="div1">
+                <p class="div1-p1">
+                    Check out the new additions to our summer collection, including our
+                </p>
+                <p>
+                    branded line of t-shirts made from certified organic cotton
+                </p>
+                <a href="products.html"><p class="div1-p2">VIEW SUMMER COLLECTION</p></a>
+            </div>
+
+            <!-- Second Div -->
+            <div class="div2">
+                <a href="products.html" class="mens-new-arrivals new-arrivals">
+                    <img src="images/mens-new-arrivals.jpg" alt="">
+                    <p class="div2-p1">MEN'S NEW ARRIVALS</p>
+                    <p class="div2-p2">SHOP NOW</p>
+                </a>
+
+                <a href="products.html" class="womens-new-arrivals new-arrivals">
+                    <img src="images/womens-new-arrivals.jpg" alt="">
+                    <p class="div2-p1">WOMEN'S NEW ARRIVALS</p>
+                    <p class="div2-p2">SHOP NOW</p>
+                </a>
+            </div>
+
+            <!-- 3rd Div -->
+            <div class="div3">
+                <p id="div3-p1">CUSTOMER FAVORITES</p>
+                <div id="div3-buttons">
+                    <button id="div3-button-1">Mens</button>
+                    <button>Womens</button>
+                    <button>Kids</button>
+                    <button>Collegiate</button>
+                </div> 
+                
+                <div id="slider">         
+                        <div id="slider-inner">
+
+                                <div class="slide-items slide-item-1">
+                                    <a href="products.html"><img class="div3-img" src="images/customer-favorites1.png" alt=""></a>
+                                    <a href="products.html"><p>CLASSIC BLAZER</p></a>
+                                    <div class="slider-circles">
+                                        <a href="products.html"><div id="mens-item1-sc1" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item1-sc2" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item1-sc3" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item1-sc4" class="slider-circle"></div></a>
+                                    </div>
+                                </div>
+
+                                <div class="slide-items slide-item-2">
+                                    <a href="products.html"><img class="div3-img" src="images/customer-favorites2.jpeg" alt=""></a>
+                                    <a href="products.html"><p>LIGHT TURTLENECK</p></a>
+                                    <div class="slider-circles">
+                                        <a href="products.html"><div id="mens-item2-sc1" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item2-sc2" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item2-sc3" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item2-sc4" class="slider-circle"></div></a>
+                                    </div>
+                                </div>
+
+                                <div class="slide-items slide-item-3">
+                                    <a href="products.html"><img class="div3-img" src="images/customer-favorites3.jpeg" alt=""></a>
+                                    <a href="products.html"><p>WOOL JACKET</p></a>
+                                    <div class="slider-circles">
+                                        <a href="products.html"><div id="mens-item3-sc1" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item3-sc2" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item3-sc3" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item3-sc4" class="slider-circle"></div></a>
+                                    </div>
+                                </div>
+
+                                <div class="slide-items slide-item-4">
+                                    <a href="products.html"><img class="div3-img" src="images/customer-favorites4.jpeg" alt=""></a>
+                                    <a href="products.html"><p>DENIM BUTTON DOWN</p></a>
+                                    <div class="slider-circles">
+                                        <a href="products.html"><div id="mens-item4-sc1" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item4-sc2" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item4-sc3" class="slider-circle"></div></a>                                        <a href="products.html"><div id="mens-item4-sc3" class="slider-circle"></div></a>
+                                    </div>
+                                </div>
+
+                                <div class="slide-items slide-item-5">
+                                    <a href="products.html"><img class="div3-img" src="images/customer-favorites5.jpg" alt=""></a>
+                                    <a href="products.html"><p>ZIP-UP HOODIE</p></a>
+                                    <div class="slider-circles">
+                                        <a href="products.html"><div id="mens-item5-sc1" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item5-sc2" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item5-sc3" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item5-sc4" class="slider-circle"></div></a>
+                                    </div>
+                                </div>
+
+                                <div class="slide-items slide-item-6">
+                                    <a href="products.html"><img class="div3-img" src="images/customer-favorites6.jpeg" alt=""></a>
+                                    <a href="products.html"><p>BUTTON DOWN DESIGN</p></a>
+                                    <div class="slider-circles">
+                                        <a href="products.html"><div id="mens-item6-sc1" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item6-sc2" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item6-sc3" class="slider-circle"></div></a>
+                                    </div>
+                                </div>
+
+                                <div class="slide-items slide-item-7">
+                                    <a href="products.html"><img class="div3-img" src="images/customer-favorites7.jpg" alt=""></a>
+                                    <a href="products.html"><p>CHECKERED VEST</p></a>
+                                    <div class="slider-circles">
+                                        <a href="products.html"><div id="mens-item7-sc1" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item7-sc2" class="slider-circle"></div></a>
+                                        <a href="products.html"><div id="mens-item7-sc3" class="slider-circle"></div></a>
+
+                                    </div>
+                                </div>
+
+                        </div>
+                </div>
+
+                <button id="slider-button-prev" class="slider-buttons" onclick="sliderButtonLeft()">
+                    <svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="3.5em" height="3.5em" viewBox="0 0 24 24"><g transform="translate(24 0) scale(-1 1)"><path fill="white" d="m7.25 17l7.5-5l-7.5-5a.901.901 0 1 1 1-1.5l8.502 5.668a1 1 0 0 1 0 1.664L8.25 18.5a.901.901 0 1 1-1-1.5z"/></g></svg>
+                </button>
+
+                <button id="slider-button-next" class="slider-buttons" onclick="sliderButtonRight()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3.5em" height="3.5em" viewBox="0 0 24 24"><path fill="white" d="m7.25 17l7.5-5l-7.5-5a.901.901 0 1 1 1-1.5l8.502 5.668a1 1 0 0 1 0 1.664L8.25 18.5a.901.901 0 1 1-1-1.5z"/></svg>
+                </button>
+            </div>
+
+            <!-- 6th Div -->
+            <div class="div6">
+                <a href="index.html"><img src="images/stores.png" alt=""></a>
+                <div class="div6-vl"></div>
+                <a href="index.html"><img src="images/gift-cards.png" alt=""></a>
+                <div class="div6-vl"></div>
+                <a href="index.html"><img src="images/catalog.png" alt=""></a>
+                <div class="div6-vl"></div>
+                <a href="index.html"><img src="images/st-rewards.png" alt=""></a>
+            </div>
+
+            <!-- 7th Div -->
+            <div class="div7">
+                <a href="index.html"><img src="images/rush-culture-block.png"></a>
+                <p id="div7-p1">Join our mailing list to receive exclusive offers, new and more.</p>
+                <input type="text" placeholder="Enter Your Email Adress">
+                <a href="index.html"><button id="div7-arrow-btn">
+                    <span id="div7-arrow-icon" class="iconify" data-icon="ion:arrow-forward-circle-outline"></span>
+                </button></a>
+                </input> 
+                <input type="text" placeholder="Phone Number (optional)">
+                <p id="div7-p2">By clicking Sign Up, you agree to receive marketing messages from Rush Culture at the number provided, including messages sent by autodialer. Consent is not a condition of any purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our Privacy Policy and Terms of Service.</p>
+                
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer">
+
+                <div id="footer-top" >
+              
+                    <button id="footer-btn-1" class="footer-opt" onclick="footerBtn1Flip()">
+                        <p class="fp1">Our Products</p>
+                        <div id="fp2-1" class="footer-arrow-div">
+                            <p class="footer-arrow">^</p>
+                        </div>   
+                    </button>
+                    <hr class="footer-hr">
+                    <div id="footer-btn-1-display" class="footer-btn-display">
+                        <a href="products.html">Mens</a>
+                        <a href="products.html">Womens</a>
+                        <a href="products.html">Kids</a>
+                        <a href="products.html">Collegiate</a>
+                        <hr class="footer-hr footer-hr2">
+                    </div>
+
+                    <button id="footer-btn-2" class="footer-opt" onclick="footerBtn2Flip()">
+                        <p class="fp1">Your Account</p>
+                        <div id="fp2-2" class="footer-arrow-div">
+                            <p class="footer-arrow">^</p>
+                        </div>   
+                    </button>
+                    <hr class="footer-hr">
+                    <div id="footer-btn-2-display" class="footer-btn-display">
+                        <a href="index.html">My Account</a>
+                        <a href="index.html">Shipping Info</a>
+                        <a href="index.html">Return Order</a>
+                        <a href="index.html">Return Policy</a>
+                        <a href="index.html">RC Rewards</a>
+                        <hr class="footer-hr footer-hr2">
+                    </div>
+
+                    <button id="footer-btn-3" class="footer-opt" onclick="footerBtn3Flip()">
+                        <p class="fp1">Support</p>
+                        <div id="fp2-3" class="footer-arrow-div">
+                            <p class="footer-arrow">^</p>
+                        </div>   
+                    </button>
+                    <hr class="footer-hr">
+                    <div id="footer-btn-3-display" class="footer-btn-display">
+                        <a href="index.html">FAQ</a>
+                        <a href="index.html">Store Locator</a>
+                        <a href="index.html">First Responders Discount</a>
+                        <a href="index.html">Health Care Providers Discount</a>
+                        <a href="index.html">Military Discount</a>
+                        <a href="index.html">Teacher Discount</a>
+                        <a href="index.html">Corporate Orders</a>
+                        <hr class="footer-hr footer-hr2">
+                    </div>
+
+                    <button id="footer-opt-4" class="footer-opt" onclick="footerBtn4Flip()">
+                        <p class="fp1">Rush Culture</p>
+                        <div id="fp2-4" class="footer-arrow-div">
+                            <p class="footer-arrow">^</p>
+                        </div>   
+                    </button>
+                    <hr id="last-footer-hr" class="footer-hr" style="opacity: 0;">
+                    <div id="footer-btn-4-display" class="footer-btn-display">
+                        <a href="index.html">Sustainability Mission</a>
+                        <a href="index.html">Our Story</a>
+                        <a href="index.html">News & Press</a>
+                        <a href="index.html">Rush Culture Blog</a>
+                        <a href="index.html">Programs</a>
+                        <a href="index.html">Careers</a>
+                    </div>
+
+                </div>
+
+                <div class="footer-middle">
+                    <p id="footer-middle-p1">@ Rush Culture</p>
+
+                    <div id="footer-middle-p2">
+                        <a href="index.html">Contact Us</a>
+                        <a href="index.html">1-800-290-2210</a>
+                        <a href="index.html">Site Map</a>
+                        <a href="index.html">Privacy Policy</a>
+                        <a href="index.html">Terms & Conditions</a>
+                    </div>
+
+                    <div class="footer-middle-icons">
+                        <a href="index.html"><span class="iconify footer-middle-icon" data-icon="fa:facebook-square"></span></a>
+                        <a href="index.html"><span class="iconify footer-middle-icon" data-icon="akar-icons:twitter-fill"></span></a>
+                        <a href="index.html"><span class="iconify footer-middle-icon" data-icon="akar-icons:pinterest-fill"></span></a>
+                        <a href="index.html"><span class="iconify footer-middle-icon" data-icon="bi:instagram"></span></a>
+                        <a href="index.html"><span class="iconify footer-middle-icon" data-icon="fa-brands:tiktok"></span></a>
+                    </div>
+                </div>
+
+                <hr id="hr1">
+
+                <div class="footer-bottom">
+                    <p>About Us</p>
+                    <p>Rush Culture began in 2020 with a vision to be the brand that defines and delivers the most exciting lifestyle. Now we are a well-established clothing brand and our mission to share our lifestyle through premium products, experiences and service continues to inspire us. Our passion is creating new styles that our customers will be able to wear for years to come.
+                    </p>
+                    <p>Dive into New Arrivals  
+                    </p>
+                    <p> Keep up with the latest new arrivals for the whole family. We have perfected our signature men’s line with everything from polo shirts, to your favorite khaki pants. Our trendy women’s line has grown to include everything from the perfect preppy swimsuit to your staple seersucker dress, and we couldn't forget about the kids! Find Father + Son matching polo’s, the shorts they will never want to take off, and t-shirts for every occasion! We've got the perfect preppy boy's clothes that are made for the most active kids out there.
+                    </p>
+                    <p>
+                    Want more inspiration and styling tips? Dive into the Rush Culture Blog, Rush Cultures’s lifestyle blog, and follow us on social media. 
+                    If you are using a screen reader or other assistive technology and are having problems using this website, please call 1-800-290-2210 for assistance. 
+                    </p>
+                </div>
+            </div>
+        
+            <!-- Message Board Button -->
+            <button id="message-icon" onclick="showMessageBoard()">
+                    <div id="message-button-gone">
+                        <div class="message-icon-out"></div>
+                        <div class="message-icon-in"></div>
+                        <div class="message-icon-in-wb"></div>
+                        <div class="message-icon-in-wd dot1"></div>
+                        <div class="message-icon-in-wd dot2"></div>
+                        <div class="message-icon-in-wd dot3"></div>
+                    </div>
+            </button>
+
+            <button id="message-close-btn" class="message-close-btn" onclick="closeMessageBoard()">
+                <div class="message-icon-out">
+                    <p id="msg-close-btn-times">&times;</p>
+                </div>
+            </button>
+            
+            <!-- Message Board -->
+            <div id="message-board">
+                <p class="message-board-title">Manage your orders</p>
+                <button class="message-board-opt"><p>Track an order</p><p class="mbp2">></p></button>
+                <hr class="message-board-hr">
+                <button class="message-board-opt"><p>Return an order</p><p class="mbp2">></p></button>
+                <hr class="message-board-hr">
+                <button class="message-board-opt"><p>Cancel an order</p><p class="mbp2">></p></button>
+                <hr class="message-board-hr">
+                <button class="message-board-opt"><p>Report an issue</p><p class="mbp2">></p></button>
+                <textarea id="message-board-input" type="text" placeholder="Type a message..."></textarea>
+                <button id="send-message">Send</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
