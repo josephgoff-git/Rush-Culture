@@ -1,0 +1,228 @@
+.products-div1 {
+    width: 100%;
+    height: 103px;
+    border-bottom: 1.2px solid rgb(63, 63, 206, 0.3);
+}
+
+.products-div1-p1 {
+    color: grey;
+    font-size: 0.8rem;
+    padding-top: 38px;
+    margin-left: 30px;
+}
+
+.products-div1-p2 {
+    color: rgb(45, 45, 45);
+    font-size: 1.1rem;
+    padding-top: 12px;
+    margin-left: 30px;
+    font-weight: 600;
+    transform: scale(1, 1.3)
+}
+
+
+/* filter  */
+#filter {
+    margin-top: 20px;
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.filter-hr {
+    height: 1.2px;
+    background-color: rgb(63, 63, 206, 0.3);
+    border: none;
+}
+
+.filter-buttons {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.filter-opt {
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    padding-left: 18px;
+    border-left: 0.6px solid rgb(45, 45, 45, 0.3);
+    border-right: 0.6px solid rgb(45, 45, 45, 0.3);
+    background-color: white;
+}
+
+#filter-btn-1 {border-left: none;}
+#filter-btn-4 {border-right: none;}
+
+.filter-p1 {
+    transform: scale(1, 1.3);
+    color: rgb(45, 45, 45);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.filter-arrow-div {
+    margin-top: -14px;
+    height: 14px;
+    width: 12px;
+    margin-left: calc(100% - 22px);
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+
+.filter-arrow {
+    transform: scale(1.5,1);
+    font-size: 1.1rem;
+    color: rgb(45, 45, 45);
+    margin-left: 2.2px;
+} 
+
+.filter-btn-display {
+    width: 100%;
+    height: auto;
+    font-size: 0.9rem;
+    background-color:rgb(241, 241, 241);
+    
+    /* onload */
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.filter-btn-display a {
+    font-size: 1.6vw;
+    margin-top: 20px;
+    color: black;
+}
+
+.filter-btn-display p {
+    font-size: 1.6vw;
+    margin-top: 20px;
+    color: black;
+}
+
+.filter-btn-display a:hover {
+    opacity: 0.5;
+}
+
+/* button 1 - Catagory */
+#filter-btn-1-display-line1 {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#filter-btn-1-display-line2 {
+    padding: 0 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* button 2 - Size */
+#filter-btn-2-display {
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#filter-btn-2-display input {
+    margin-left: 2vw;
+    margin-right: 1vw;
+    margin-top: -4px;
+}
+
+/* button 3 - Colors */
+#filter-btn-3-display-line1 {
+    padding-top: 7px;
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+#filter-btn-3-display-line1 > * {
+    margin-left: 0.8vw;
+    margin-right: 0.8vw;
+}
+
+/* button 4 - Price */
+#filter-btn-4-display-line1 {
+    padding-top: 4px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: left;
+}
+#filter-btn-4-display input {
+    width: calc(60px + 3vw);
+    height: 20px;
+    margin-left: 5px;
+    margin-top: calc(10px + 1vw)
+}
+
+#filter-btn-4-display-line2 {
+    padding-top: 7px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 14px;
+}
+
+#filter-btn-4-display button {
+    height: 3vw;
+    width: 5vw;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    font-size: 1.5vw;
+    margin-left: 20px;
+    margin-bottom: 14px;
+}
+
+
+
+/* products  */
+.products-div3 {
+    margin: 30px 0;
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.product-items {
+    height: auto;
+    display: block;
+    /* background: linear-gradient(grey, white); */
+    border: 1px solid rgb(107, 107, 107, 0.4);
+    border-radius: 5px;
+    margin: 1px;
+}
+
+.product-items img {
+    width: 96%;
+    margin: 2%;
+}
+
+.product-items p {
+    padding: 10px;
+    text-align: center;
+    color: rgb(45,45,45)
+}
+
+.product-color-circles {
+    display: flex;
+    justify-content: center;
+}
+.pcs {
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+#pc1 {background-color: rgb(57, 34, 161);}
+#pc2 {background-color: rgb(0, 0, 0);}
+#pc3 {background-color: rgb(212, 212, 212);}
+#pc4 {background-color: rgb(73, 73, 73);}
